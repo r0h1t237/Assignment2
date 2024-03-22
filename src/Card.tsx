@@ -36,7 +36,7 @@ const Card = (props: Props) => {
         <img className='img' src={props.image} alt={props.name} />
         </Link>
         <Box paddingX={1}>
-          <Typography component='h2' variant='subtitle1'>
+          <Typography component='h2' variant='subtitle1' noWrap>
             {props.name}
           </Typography>
           <Box sx={{

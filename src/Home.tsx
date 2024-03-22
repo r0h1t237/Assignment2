@@ -288,7 +288,7 @@ const Home = (): JSX.Element => {
 
   return (
     <>
-      <Box sx={{ display: 'flex', flexDirection: 'row' ,justifyContent:'space-between'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row' ,justifyContent:'center'}}>
         <Box><BasicSelect field={mealType} setField={setMealType} type="Select Meal" options={mealOptions} /> </Box>
         <Box><BasicSelect field={cuisine} setField={setCuisine} type="Select Cuisine" options={cuisineOptions} /> </Box>
         <Box><BasicSelect field={difficulty} setField={setDifficulty} type="Difficulty" options={difficultyOptions} /> </Box>
@@ -296,11 +296,11 @@ const Home = (): JSX.Element => {
 
       </Box>
       <Container className='App' maxWidth='xl' >
-        <Grid container spacing={5} marginTop={1} >
+        <Grid container spacing={2} >
 
           {(currentRecipe && currentRecipe.length) ? currentRecipe.map((el: Recipe) => (
             <Card {...el} />
-          )) : <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 5 }}>No data available as per your choice. Please try something else.</Box>}
+          )) : <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop:20 }}>No data available as per your choice. Please try something else.</Box>}
 
 
         </Grid>
