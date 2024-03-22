@@ -7,3 +7,15 @@
  3 Add Recipe Page
  
 ![Screenshot 2024-03-21 093530](https://github.com/r0h1t237/Assignment2/assets/94473690/963111f3-1445-4e8c-8b57-61d26b585739)
+
+4. First clone backend and run the backend at port 8080
+   
+5. Upload list of recipe in db name 'recipeApp' create collection name 'listofrecipe' at port number 27017
+
+   
+![Screenshot 2024-03-22 181049](https://github.com/r0h1t237/Assignment2/assets/94473690/fa86102a-721e-4d16-b323-37476be9a2b9)
+
+6. get list of recipe from https://dummyjson.com/recipes?limit=50
+
+   
+   
