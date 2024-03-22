@@ -10,7 +10,7 @@
 
 4. First clone backend and run the backend at port 8080
    
-5. Upload list of recipe in db name 'recipeApp' create collection name 'listofrecipe' at port number 27017
+5. Upload list of recipe in db name 'recipeApp' create collection name 'listofrecipes' at port number 27017
 
    
 ![Screenshot 2024-03-22 181049](https://github.com/r0h1t237/Assignment2/assets/94473690/fa86102a-721e-4d16-b323-37476be9a2b9)
