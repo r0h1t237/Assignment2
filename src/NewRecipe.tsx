@@ -1,5 +1,7 @@
 import { Box, Button, Container, FormControl, FormHelperText, Grid, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
+import api from './api/recipe'
+import { useNavigate } from 'react-router-dom'
 
 const NewRecipe = () => {
   const [name, setName] = useState('');
@@ -18,10 +20,16 @@ const NewRecipe = () => {
   const [prepTimeMinutesError, setPrepTimeMinutesError] = useState(false);
   const [cookTimeMinutes, setCookTimeMinutes] = useState('0');
   const [cookTimeMinutesError, setCookTimeMinutesError] = useState(false);
+  const [tags, setTags] = useState('');
+  const [tagsError, setTagsError] = useState(false);
+  const [mealType, setMealType] = useState('');
+  const [mealTypeError, setMealTypeError] = useState(false);
 
   const difficultyOption = ['Easy', 'Medium', 'Hard']
 
-  const handleSubmit = (event: React.FormEvent) => {
+  let navigate = useNavigate();
+
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     console.log('submit button clicked')
     setNameError(false);
@@ -43,29 +51,50 @@ const NewRecipe = () => {
     if (ingredients === '') {
       setIngredientsError(true);
     }
-    if( instructions==='')
-    {
+    if (instructions === '') {
       setInstructionsError(true)
     }
-    if(image === '')
-    {
+    if (image === '') {
       setImageError(true)
     }
-    if(difficulty === ''){
+    if (difficulty === '') {
       setDifficultyError(true)
     }
-    if(prepTimeMinutes==='0'){
+    if (prepTimeMinutes === '0') {
       setPrepTimeMinutesError(true)
     }
-    if(cookTimeMinutes === '0'){
+    if (cookTimeMinutes === '0') {
       setCookTimeMinutesError(true)
     }
-
-    if (name && cuisine) {
-      console.log(name,cuisine);
-      // Here you can handle form submission, e.g., send data to a server
+    if (tags === '') {
+      setTagsError(true)
     }
+    if (mealType === '') {
+      setMealTypeError(true)
+    }
+
+    if (name && cuisine && ingredients && instructions && image && difficulty && prepTimeMinutes && cookTimeMinutes && tags && mealType) {
+
+      let data = {
+        name, cuisine, ingredients: ingredients.split('\n'), instructions: instructions.split('\n'), image, difficulty, prepTimeMinutes, cookTimeMinutes, tags: tags.split('\n'), mealType: mealType.split('\n')
+      }
+
+      try {
+        let response = await api.post('/recipe/addrecipe', data);
+        navigate('/')
+
+      }
+      catch (err) {
+        console.warn(err)
+      }
+
+
+
+    }
+
+    // Here you can handle form submission, e.g., send data to a server
   }
+
 
   return (
     <Container >
@@ -73,7 +102,7 @@ const NewRecipe = () => {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography variant='h3' component='h1' marginTop={3} >
+              <Typography variant='h3' component='h2' marginTop={1} >
                 Add your recipe.
               </Typography>
             </Box>
@@ -133,7 +162,7 @@ const NewRecipe = () => {
                 fullWidth
                 error={instructionsError}
               />
-              {instructionsError && <FormHelperText>Instruction required</FormHelperText>}
+              {instructionsError && <FormHelperText>Instructions are required</FormHelperText>}
             </FormControl>
           </Grid>
           <Grid item xs={6}>
@@ -147,7 +176,7 @@ const NewRecipe = () => {
                 fullWidth
                 error={imageError}
               />
-              {imageError && <FormHelperText>Recipe image required.</FormHelperText>}
+              {imageError && <FormHelperText>Recipe image is required.</FormHelperText>}
             </FormControl>
           </Grid>
           <Grid item xs={6}>
@@ -169,9 +198,9 @@ const NewRecipe = () => {
                 label="Preparation Difficulty"
                 onChange={(e) => setDifficulty(e.target.value)}
               >
-                {difficultyOption.map(el=><MenuItem value={el}>{el}</MenuItem>)}
+                {difficultyOption.map(el => <MenuItem value={el}>{el}</MenuItem>)}
               </Select>
-              {difficultyError && <FormHelperText>Difficulty Required</FormHelperText>}
+              {difficultyError && <FormHelperText>Difficulty level Required</FormHelperText>}
             </FormControl>
           </Grid>
           <Grid item xs={6}>
@@ -204,17 +233,47 @@ const NewRecipe = () => {
               {cookTimeMinutesError && <FormHelperText>Cooking time is required.</FormHelperText>}
             </FormControl>
           </Grid>
+          <Grid item xs={6}>
+            <FormControl error={tagsError} fullWidth>
+              <TextField
+                label="Tags"
+                type="text"
+                value={tags}
+                onChange={(e) => setTags(e.target.value)}
+                required
+                fullWidth
+                multiline
+                error={tagsError}
+              />
+              {tagsError && <FormHelperText>Tags are required.</FormHelperText>}
+            </FormControl>
+          </Grid>
+          <Grid item xs={6}>
+            <FormControl error={mealTypeError} fullWidth>
+              <TextField
+                label="Meal Type"
+                type="text"
+                value={mealType}
+                onChange={(e) => setMealType(e.target.value)}
+                required
+                multiline
+                fullWidth
+                error={mealTypeError}
+              />
+              {mealTypeError && <FormHelperText>Meal Type required</FormHelperText>}
+            </FormControl>
+          </Grid>
 
         </Grid>
         <Box sx={{
           display: 'flex',
           justifyContent: 'center',
-          marginTop: 3,
-          padding: 2
+          marginTop: 1,
+          // padding: 2
 
         }}>
           <Button variant="contained" color="primary" type="submit" >
-            <Typography variant='h6' component='p' padding={1}>Submit Recipe</Typography>
+            <Typography variant='h6' component='p' padding='2'>Submit Recipe</Typography>
           </Button >
         </Box>
       </form>
