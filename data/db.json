@@ -1,7 +1,7 @@
 {
     "recipes":[        
         {
-            "reciped": 1,
+            "recipeid": 1,
             "name": "Classic Margherita Pizza",
             "ingredients": [
                 "Pizza dough",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "reciped": 2,
+            "recipeid": 2,
             "name": "Vegetarian Stir-Fry",
             "ingredients": [
                 "Tofu, cubed",
@@ -79,7 +79,7 @@
             ]
         },
         {
-            "reciped": 3,
+            "recipeid": 3,
             "name": "Chocolate Chip Cookies",
             "ingredients": [
                 "All-purpose flour",
@@ -123,7 +123,7 @@
             ]
         },
         {
-            "reciped": 4,
+            "recipeid": 4,
             "name": "Chicken Alfredo Pasta",
             "ingredients": [
                 "Fettuccine pasta",
@@ -164,7 +164,7 @@
             ]
         },
         {
-            "reciped": 5,
+            "recipeid": 5,
             "name": "Mango Salsa Chicken",
             "ingredients": [
                 "Chicken thighs",
@@ -202,7 +202,7 @@
             ]
         },
         {
-            "reciped": 6,
+            "recipeid": 6,
             "name": "Quinoa Salad with Avocado",
             "ingredients": [
                 "Quinoa, cooked",
@@ -240,7 +240,7 @@
             ]
         },
         {
-            "reciped": 7,
+            "recipeid": 7,
             "name": "Tomato Basil Bruschetta",
             "ingredients": [
                 "Baguette, sliced",
@@ -278,7 +278,7 @@
             ]
         },
         {
-            "reciped": 8,
+            "recipeid": 8,
             "name": "Beef and Broccoli Stir-Fry",
             "ingredients": [
                 "Beef sirloin, thinly sliced",
@@ -319,7 +319,7 @@
             ]
         },
         {
-            "reciped": 9,
+            "recipeid": 9,
             "name": "Caprese Salad",
             "ingredients": [
                 "Tomatoes, sliced",
@@ -355,7 +355,7 @@
             ]
         },
         {
-            "reciped": 10,
+            "recipeid": 10,
             "name": "Shrimp Scampi Pasta",
             "ingredients": [
                 "Linguine pasta",
@@ -395,7 +395,7 @@
             ]
         },
         {
-            "reciped": 11,
+            "recipeid": 11,
             "name": "Chicken Biryani",
             "ingredients": [
                 "Basmati rice",
@@ -443,7 +443,7 @@
             ]
         },
         {
-            "reciped": 12,
+            "recipeid": 12,
             "name": "Chicken Karahi",
             "ingredients": [
                 "Chicken, cut into pieces",
@@ -490,7 +490,7 @@
             ]
         },
         {
-            "reciped": 13,
+            "recipeid": 13,
             "name": "Aloo Keema",
             "ingredients": [
                 "Ground beef",
@@ -537,7 +537,7 @@
             ]
         },
         {
-            "reciped": 14,
+            "recipeid": 14,
             "name": "Chapli Kebabs",
             "ingredients": [
                 "Ground beef",
@@ -585,7 +585,7 @@
             ]
         },
         {
-            "reciped": 15,
+            "recipeid": 15,
             "name": "Saag (Spinach) with Makki di Roti",
             "ingredients": [
                 "Mustard greens, washed and chopped",
@@ -630,7 +630,7 @@
             ]
         },
         {
-            "reciped": 16,
+            "recipeid": 16,
             "name": "Japanese Ramen Soup",
             "ingredients": [
                 "Ramen noodles",
@@ -674,7 +674,7 @@
             ]
         },
         {
-            "reciped": 17,
+            "recipeid": 17,
             "name": "Moroccan Chickpea Tagine",
             "ingredients": [
                 "Chickpeas, cooked",
@@ -718,7 +718,7 @@
             ]
         },
         {
-            "reciped": 18,
+            "recipeid": 18,
             "name": "Korean Bibimbap",
             "ingredients": [
                 "Cooked white rice",
@@ -760,7 +760,7 @@
             ]
         },
         {
-            "reciped": 19,
+            "recipeid": 19,
             "name": "Greek Moussaka",
             "ingredients": [
                 "Eggplants, sliced",
@@ -808,7 +808,7 @@
             ]
         },
         {
-            "reciped": 20,
+            "recipeid": 20,
             "name": "Butter Chicken (Murgh Makhani)",
             "ingredients": [
                 "Chicken thighs, boneless and skinless",
@@ -852,7 +852,7 @@
             ]
         },
         {
-            "reciped": 21,
+            "recipeid": 21,
             "name": "Thai Green Curry",
             "ingredients": [
                 "Chicken thighs, boneless and skinless",
@@ -891,7 +891,7 @@
             ]
         },
         {
-            "reciped": 22,
+            "recipeid": 22,
             "name": "Mango Lassi",
             "ingredients": [
                 "Ripe mango, peeled and diced",
@@ -930,7 +930,7 @@
             ]
         },
         {
-            "reciped": 23,
+            "recipeid": 23,
             "name": "Italian Tiramisu",
             "ingredients": [
                 "Espresso, brewed and cooled",
@@ -969,7 +969,7 @@
             ]
         },
         {
-            "reciped": 24,
+            "recipeid": 24,
             "name": "Turkish Kebabs",
             "ingredients": [
                 "Ground lamb or beef",
@@ -1009,7 +1009,7 @@
             ]
         },
         {
-            "reciped": 25,
+            "recipeid": 25,
             "name": "Blueberry Banana Smoothie",
             "ingredients": [
                 "Blueberries, fresh or frozen",
@@ -1046,7 +1046,7 @@
             ]
         },
         {
-            "reciped": 26,
+            "recipeid": 26,
             "name": "Mexican Street Corn (Elote)",
             "ingredients": [
                 "Corn on the cob",
@@ -1082,7 +1082,7 @@
             ]
         },
         {
-            "reciped": 27,
+            "recipeid": 27,
             "name": "Russian Borscht",
             "ingredients": [
                 "Beets, peeled and shredded",
@@ -1123,7 +1123,7 @@
             ]
         },
         {
-            "reciped": 28,
+            "recipeid": 28,
             "name": "South Indian Masala Dosa",
             "ingredients": [
                 "Dosa batter (fermented rice and urad dal batter)",
@@ -1165,7 +1165,7 @@
             ]
         },
         {
-            "reciped": 29,
+            "recipeid": 29,
             "name": "Lebanese Falafel Wrap",
             "ingredients": [
                 "Falafel balls",
@@ -1204,7 +1204,7 @@
             ]
         },
         {
-            "reciped": 30,
+            "recipeid": 30,
             "name": "Brazilian Caipirinha",
             "ingredients": [
                 "Cachaça (Brazilian sugarcane spirit)",
@@ -1239,7 +1239,7 @@
             ]
         },
         {
-            "reciped": 31,
+            "recipeid": 31,
             "name": "Spanish Patatas Bravas",
             "ingredients": [
                 "Potatoes, diced",
@@ -1277,7 +1277,7 @@
             ]
         },
         {
-            "reciped": 32,
+            "recipeid": 32,
             "name": "Vietnamese Fresh Spring Rolls",
             "ingredients": [
                 "Rice paper wrappers",
@@ -1315,7 +1315,7 @@
             ]
         },
         {
-            "reciped": 33,
+            "recipeid": 33,
             "name": "Mediterranean Quinoa Salad",
             "ingredients": [
                 "Quinoa, cooked",
@@ -1352,7 +1352,7 @@
             ]
         },
         {
-            "reciped": 34,
+            "recipeid": 34,
             "name": "Japanese Matcha Green Tea Ice Cream",
             "ingredients": [
                 "Heavy cream",
@@ -1388,7 +1388,7 @@
             ]
         },
         {
-            "reciped": 35,
+            "recipeid": 35,
             "name": "Brazilian Chocolate Brigadeiros",
             "ingredients": [
                 "Sweetened condensed milk",
@@ -1422,7 +1422,7 @@
             ]
         },
         {
-            "reciped": 36,
+            "recipeid": 36,
             "name": "Mexican Chicken Enchiladas",
             "ingredients": [
                 "Chicken breasts, cooked and shredded",
@@ -1462,7 +1462,7 @@
             ]
         },
         {
-            "reciped": 37,
+            "recipeid": 37,
             "name": "Thai Coconut Shrimp Curry",
             "ingredients": [
                 "Shrimp, peeled and deveined",
@@ -1502,7 +1502,7 @@
             ]
         },
         {
-            "reciped": 38,
+            "recipeid": 38,
             "name": "Greek Spanakopita",
             "ingredients": [
                 "Phyllo dough",
@@ -1541,7 +1541,7 @@
             ]
         },
         {
-            "reciped": 39,
+            "recipeid": 39,
             "name": "Moroccan Couscous Salad",
             "ingredients": [
                 "Couscous, cooked",
@@ -1578,7 +1578,7 @@
             ]
         },
         {
-            "reciped": 40,
+            "recipeid": 40,
             "name": "Classic Mojito",
             "ingredients": [
                 "Fresh mint leaves",
@@ -1615,7 +1615,7 @@
             ]
         },
         {
-            "reciped": 41,
+            "recipeid": 41,
             "name": "Caprese Bruschetta",
             "ingredients": [
                 "Baguette, sliced",
@@ -1654,7 +1654,7 @@
             ]
         },
         {
-            "reciped": 42,
+            "recipeid": 42,
             "name": "Teriyaki Chicken Stir-Fry",
             "ingredients": [
                 "Chicken breast, thinly sliced",
@@ -1695,7 +1695,7 @@
             ]
         },
         {
-            "reciped": 43,
+            "recipeid": 43,
             "name": "Mango Avocado Salsa",
             "ingredients": [
                 "Mango, diced",
@@ -1731,7 +1731,7 @@
             ]
         },
         {
-            "reciped": 44,
+            "recipeid": 44,
             "name": "Shrimp and Asparagus Stir-Fry",
             "ingredients": [
                 "Shrimp, peeled and deveined",
@@ -1771,7 +1771,7 @@
             ]
         },
         {
-            "reciped": 45,
+            "recipeid": 45,
             "name": "Italian Margherita Pizza",
             "ingredients": [
                 "Pizza dough",
@@ -1810,7 +1810,7 @@
             ]
         },
         {
-            "reciped": 46,
+            "recipeid": 46,
             "name": "Pesto Pasta with Cherry Tomatoes",
             "ingredients": [
                 "Penne pasta",
@@ -1846,7 +1846,7 @@
             ]
         },
         {
-            "reciped": 47,
+            "recipeid": 47,
             "name": "Hawaiian Chicken Skewers",
             "ingredients": [
                 "Chicken breasts, cut into chunks",
@@ -1887,7 +1887,7 @@
             ]
         },
         {
-            "reciped": 48,
+            "recipeid": 48,
             "name": "Cucumber Avocado Rolls",
             "ingredients": [
                 "Sushi rice, seasoned",
@@ -1925,7 +1925,7 @@
             ]
         },
         {
-            "reciped": 49,
+            "recipeid": 49,
             "name": "Mediterranean Chickpea Salad",
             "ingredients": [
                 "Canned chickpeas, drained and rinsed",
@@ -1966,7 +1966,7 @@
             ]
         },
         {
-            "reciped": 50,
+            "recipeid": 50,
             "name": "Pineapple Coconut Smoothie",
             "ingredients": [
                 "Pineapple chunks, fresh or frozen",
