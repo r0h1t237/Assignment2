@@ -19,7 +19,6 @@
 
 7. then clone frontEnd, install dependencies and run the project
 
-8. ![newProfile](https://github.com/user-attachments/assets/d03f74b8-0f65-4dc0-bf30-db87e15d6b6b)
 
 
    
